@@ -15,7 +15,7 @@ Given that the user is seeking information about current weather conditions and 
 
 ## Current Weather Information
 
-![Weather Dashboard Image](assets/dash.png)
+![Weather Dashboard Image](Assets/dash.png)
 
 Through the process of completing this project, I was very keen on learning how to make .ajax calls to grab data from the OpenWeather API. In terms of website functionallity, this skill makes creating a website go beyond using just static data; it excites me that it is possible to apply potentially changing data that will dynamically change over time based off of variables outside of my input/control. I'm excited to find more api's to apply to my future projects!
 
