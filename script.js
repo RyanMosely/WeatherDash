@@ -108,7 +108,7 @@ fiveDayTitle.text("5-Day Forcast:")
     
 
     var cityName = $(this).text()
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName+ "&units=imperial&APPID=19cbd846d1fb7013c59a434d03a94e92"
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName+ "&units=imperial&APPID=19cbd846d1fb7013c59a434d03a94e92"
 
     var cityDivNameDateIcon = $("<h4>");
     var cityDivTemp = $("<div>");
@@ -134,7 +134,7 @@ fiveDayTitle.text("5-Day Forcast:")
 
         ////////////////// Name/Date/WeatherIcon //////////////////
 
-        weatherIcon.attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon+".png");
+        weatherIcon.attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon+".png");
         console.log(weatherIcon);
 
         cityDivNameDateIcon.text(response.name + " " + '(' + momentDate + ')');
@@ -168,7 +168,7 @@ fiveDayTitle.text("5-Day Forcast:")
         var cityLon = cityCorLonArr.toString();
         var cityLat = cityCorLatArr.toString();
 
-        var queryURLTwo = "http://api.openweathermap.org/data/2.5/uvi?APPID=19cbd846d1fb7013c59a434d03a94e92&lat="+cityLat+"&lon="+cityLon;
+        var queryURLTwo = "https://api.openweathermap.org/data/2.5/uvi?APPID=19cbd846d1fb7013c59a434d03a94e92&lat="+cityLat+"&lon="+cityLon;
 
 
 
@@ -259,7 +259,7 @@ var weatherHumFiveEl = $(".weatherFiveHum");
 
 
 
-var queryURLThree = "http://api.openweathermap.org/data/2.5/forecast?APPID=19cbd846d1fb7013c59a434d03a94e92&units=imperial&lat="+cityLat+"&lon="+cityLon;
+var queryURLThree = "https://api.openweathermap.org/data/2.5/forecast?APPID=19cbd846d1fb7013c59a434d03a94e92&units=imperial&lat="+cityLat+"&lon="+cityLon;
 
 
 
@@ -278,7 +278,7 @@ $.ajax({
     weatherDateOneEl.text(momentDateDayOne);
 
     //Day One icon
-    weatherIconOne.attr("src", "http://openweathermap.org/img/wn/" +response.list[3].weather[0].icon+".png");
+    weatherIconOne.attr("src", "https://openweathermap.org/img/wn/" +response.list[3].weather[0].icon+".png");
     console.log(weatherIconOne);
     weatherIconOneEl.append(weatherIconOne);
 
@@ -299,7 +299,7 @@ $.ajax({
     weatherDateTwoEl.text(momentDateDayTwo);
 
     //Day Two icon
-    weatherIconTwo.attr("src", "http://openweathermap.org/img/wn/" +response.list[11].weather[0].icon+".png");
+    weatherIconTwo.attr("src", "https://openweathermap.org/img/wn/" +response.list[11].weather[0].icon+".png");
     console.log(weatherIconTwo);
     weatherIconTwoEl.append(weatherIconTwo);
 
@@ -317,7 +317,7 @@ $.ajax({
     weatherDateThreeEl.text(momentDateDayThree);
 
     //Day Three icon
-    weatherIconThree.attr("src", "http://openweathermap.org/img/wn/" +response.list[19].weather[0].icon+".png");
+    weatherIconThree.attr("src", "https://openweathermap.org/img/wn/" +response.list[19].weather[0].icon+".png");
     console.log(weatherIconThree);
     weatherIconThreeEl.append(weatherIconThree);
 
@@ -336,7 +336,7 @@ $.ajax({
     console.log(response.list[27].dt_txt.slice(0, 10)); 
 
     //Day Four icon
-    weatherIconFour.attr("src", "http://openweathermap.org/img/wn/" +response.list[27].weather[0].icon+".png");
+    weatherIconFour.attr("src", "https://openweathermap.org/img/wn/" +response.list[27].weather[0].icon+".png");
     console.log(weatherIconFour);
     weatherIconFourEl.append(weatherIconFour);
 
@@ -355,7 +355,7 @@ $.ajax({
     console.log(response.list[35].dt_txt.slice(0, 10));
 
     //Day Five icon
-    weatherIconFive.attr("src", "http://openweathermap.org/img/wn/" +response.list[35].weather[0].icon+".png");
+    weatherIconFive.attr("src", "https://openweathermap.org/img/wn/" +response.list[35].weather[0].icon+".png");
     console.log(weatherIconFive);
     weatherIconFiveEl.append(weatherIconFive);
 
