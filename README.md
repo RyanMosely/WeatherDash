@@ -5,7 +5,7 @@ To access this page, enter this URL into your address bar and follow the instruc
 
 ## Usage
 
-Given that the user is seeking information about current weather conditions and a 5 day weather forcast of a desired city:
+Given that the user is seeking information about current weather conditions and a 5 day weather forcast of a desired city, here are the directions on how to use this sites application service:
 
 1.) The user can type the city name inside the input area and search for the city they want weather information on.
 
